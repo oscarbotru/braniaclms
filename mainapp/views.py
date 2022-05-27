@@ -1,5 +1,5 @@
 import json
-
+from django.core.paginator import Paginator
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
