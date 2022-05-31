@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
     'social_django',
 
     'authapp',
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'braniaclms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,3 +152,5 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_GITHUB_KEY = '8532eda048694543393c'
 SOCIAL_AUTH_GITHUB_SECRET = 'fd5a7531fcd6fb7e57b54de23f3113089c87dc43'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
