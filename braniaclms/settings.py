@@ -26,10 +26,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-if DEBUG:
-    INTERNAL_IPS = [
-        '127.0.0.1'
-    ]
+# if DEBUG:
+#     INTERNAL_IPS = [
+#         '127.0.0.1'
+#     ]
 
 # Application definition
 
@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'crispy_forms',
-    'debug_toolbar',
     'social_django',
 
     'authapp',
@@ -52,6 +51,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -217,3 +217,5 @@ EMAIL_FILE_PATH = 'emails-tmp'
 #         "django": {"level": "INFO", "handlers": ["console"]},
 #     },
 # }
+
+LOCALE_PATHS = [BASE_DIR / 'locale']
