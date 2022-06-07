@@ -6,3 +6,4 @@ __pycache__
 log
 emails-tmp
 .DS_Store
+.env
