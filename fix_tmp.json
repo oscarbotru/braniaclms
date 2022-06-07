@@ -3,11 +3,11 @@
     "model": "mainapp.news",
     "pk": 2,
     "fields": {
-      "updated_at": "2022-05-17T18:44:37.529Z",
-      "created_at": "2022-05-17T18:30:43.931Z",
+      "created_at": "2022-05-21T09:47:32.955Z",
+      "updated_at": "2022-05-21T09:47:32.955Z",
       "deleted": false,
-      "title": "New awesome news",
-      "preambule": "preambule2",
+      "title": "news2",
+      "intro": "intro2",
       "body": "body2",
       "body_as_markdown": false
     }
